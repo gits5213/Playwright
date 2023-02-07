@@ -27,3 +27,7 @@ Pre-configure
 - Right click on the testNG.xml file and clcik on run test
 - open up the terminal and type > mvn clean test
 ```
+
+## Generate result
+- Open terminal 
+- Allure serve test-result
