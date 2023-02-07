@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="rigorousTest" verbose="1" >
+    <test name="rigorousTest" >
+        <parameter name="browser" value="chrome"/>
+        <parameter name="username" value="tomsmith"/>
+        <parameter name="password" value="SuperSecretPassword!"/>
+        <parameter name="wrongPassword" value="SuperSecretPassword"/>
+        <classes>
+            <class name="com.insight.javaBoilerplate.testCases.LoginTest" />
+        </classes>
+    </test>
+</suite>
