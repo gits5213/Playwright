@@ -1,0 +1,6 @@
+{
+    "serviceUrl": "/api/users?page=2",
+    "postUserList": "/api/users",
+    "sucessfulStatusCode": 200,
+    "createdSucessfulStatusCode": 201
+}
