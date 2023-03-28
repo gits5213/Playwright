@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test",
-    "test:ui": "npx playwright test --ui",
-    "posttest": "allure generate my-allure-results --clean -o allure-report && allure open allure-report",
+    "test": "npx playwright test --headed",
+    "report": "allure generate my-allure-results --clean -o allure-report && allure open allure-report",
     "codegen": "npx playwright codegen",
     "debug": "npx playwright test --debug",
     "chrome": "npx playwright test --project=chromium --headed",
     "report:html": "npx playwright show-report",
     "workers": "npx playwright test --workers=1",
     "chromium": "npx playwright test --project=chromium",
-    "report:list": "npx playwright test --reporter=list"
+    "report:list": "npx playwright test --reporter=list",
+    "test:ui": "npx playwright test --ui"
   },
   "keywords": [],
   "author": "",

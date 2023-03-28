@@ -1,7 +1,7 @@
 import { expect, request, test } from "@playwright/test";
-import data from '../testData/data.json';
-import getListOfUser from './apiPom/getUitls/getUserList.json';
-import createUserBodyPayload from './apiPom/postUtils/createUserPayload.json';
+import data from '../../testData/data.json';
+import getListOfUser from '../../pom/getUitls/getUserList.json';
+import createUserBodyPayload from '../../pom/postUtils/createUserPayload.json';
 
 test.describe('api automation suite', () => {
 

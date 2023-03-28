@@ -1,22 +1,19 @@
-import { page } from '@playwright/test';
+exports.utils = class utils {
 
-const utils = {
-
-    // constructor(page) {
-    //     this.page = page;
-    //   },
+    constructor(page){
+        this.page = page;
+    }
 
     async goto(url) {
-        await page.goto(url);
-    },
+        await this.page.goto(url);
+    }
     async mouseHover(identifier) {
-        await page.locator(identifier).hover();
-    },
+        await this.page.locator(identifier).hover();
+    }
     async clickOnElement(identifier) {
-        await page.locator(identifier).click();
-    },
+        await this.page.locator(identifier).click();
+    }
     async fillInputField(identifier, txt) {
-        await page.locator(identifier).fill(txt);
-    },
+        await this.page.locator(identifier).fill(txt);
+    }
 }
-module.exports = utils;

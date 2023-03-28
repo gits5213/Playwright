@@ -1,16 +1,17 @@
 import { test, expect } from '@playwright/test';
 import homePage from './pageObjects/homePage';
 import registrationPage from './pageObjects/registrationPage';
-import utils from './uiUtils/utils';
+const {utils} = require ('./uiUtils/utils');
 
 test.describe('LamdaTest registration page assertion', () => {
 
     test('test', async ({ page }) => {
+        const util = new utils(page);
     
-        await utils.goto('https://ecommerce-playground.lambdatest.io');
-        await utils.mouseHover(homePage.getMyAccount);
-        await utils.clickOnElement("[class='mz-sub-menu-96 dropdown-menu'] li:nth-of-type(2) .title");
-        await utils.clickOnElement(registrationPage.getFirstname);
+        await util.goto('https://ecommerce-playground.lambdatest.io');
+        await util.mouseHover(homePage.getMyAccount);
+        await util.clickOnElement("[class='mz-sub-menu-96 dropdown-menu'] li:nth-of-type(2) .title");
+        await util.clickOnElement(registrationPage.getFirstname);
     //await page.goto('https://ecommerce-playground.lambdatest.io');
     //await page.locator(homePage.getMyAccount).hover();
     //await page.getByRole('link', { name: 'Register' }).click();

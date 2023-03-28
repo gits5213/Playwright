@@ -61,7 +61,7 @@ module.exports = defineConfig({
     // },
     //ignoreHTTPSErrors: true,
     //userAgent: 'some custom ua',
-    ignoreHTTPSErrors: true,
+
     baseURL: 'https://reqres.in',
     extraHTTPHeaders: {
       'Content-type': 'application/json; charset=UTF-8'
@@ -77,10 +77,10 @@ module.exports = defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
     // {
     //   name: 'webkit',
